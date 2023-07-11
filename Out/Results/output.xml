@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230711 14:33:55.262" rpa="false" schemaversion="4">
+<robot generator="Rebot 6.1 (Python 3.11.4 on win32)" generated="20230711 15:38:01.654" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="C:\Users\monsh\PycharmProjects\Occazio\Tests">
 <suite id="s1-s1" name="HomeTest" source="C:\Users\monsh\PycharmProjects\Occazio\Tests\HomeTest.robot">
 <test id="s1-s1-t1" name="Lancer le slide" line="8">
@@ -12,15 +12,15 @@
 <kw name="Run And Return Rc" library="OperatingSystem">
 <arg>C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p ${PORT}</arg>
 <doc>Runs the given command in the system and returns the return code.</doc>
-<msg timestamp="20230711 14:33:55.611" level="INFO">Running command 'C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p 4723 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20230711 14:33:55.601" endtime="20230711 14:33:57.585"/>
+<msg timestamp="20230711 15:37:26.308" level="INFO">Running command 'C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p 4723 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20230711 15:37:26.302" endtime="20230711 15:37:27.392"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>appium -p ${PORT}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230711 14:33:57.585" endtime="20230711 14:33:57.592"/>
+<status status="PASS" starttime="20230711 15:37:27.393" endtime="20230711 15:37:27.393"/>
 </kw>
-<status status="PASS" starttime="20230711 14:33:55.601" endtime="20230711 14:33:57.592"/>
+<status status="PASS" starttime="20230711 15:37:26.302" endtime="20230711 15:37:27.394"/>
 </kw>
 <kw name="Occazio" library="Base">
 <doc>Ouvrir l'application occazio</doc>
@@ -38,44 +38,70 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230711 14:33:57.592" endtime="20230711 14:34:09.784"/>
+<status status="PASS" starttime="20230711 15:37:27.394" endtime="20230711 15:37:36.034"/>
 </kw>
-<status status="PASS" starttime="20230711 14:33:57.592" endtime="20230711 14:34:09.784"/>
+<status status="PASS" starttime="20230711 15:37:27.394" endtime="20230711 15:37:36.034"/>
 </kw>
-<status status="PASS" starttime="20230711 14:33:55.601" endtime="20230711 14:34:09.784"/>
+<status status="PASS" starttime="20230711 15:37:26.302" endtime="20230711 15:37:36.035"/>
 </kw>
 <kw name="Derouler le slide" library="Home">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${BtnDemarrer}</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230711 14:34:14.053" level="INFO">criteria is bt_start_showcase
+<msg timestamp="20230711 15:37:45.407" level="INFO">criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
+criteria is bt_start_showcase
 criteria is bt_start_showcase
 criteria is bt_start_showcase
 criteria is bt_start_showcase
 criteria is bt_start_showcase
 criteria is bt_start_showcase
 criteria is bt_start_showcase</msg>
-<status status="PASS" starttime="20230711 14:34:09.785" endtime="20230711 14:34:14.053"/>
+<status status="PASS" starttime="20230711 15:37:36.035" endtime="20230711 15:37:45.407"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${BtnDemarrer}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230711 14:34:14.056" level="INFO">Clicking element 'id=bt_start_showcase'.</msg>
-<msg timestamp="20230711 14:34:14.224" level="INFO">criteria is bt_start_showcase</msg>
-<status status="PASS" starttime="20230711 14:34:14.053" endtime="20230711 14:34:14.224"/>
+<msg timestamp="20230711 15:37:45.410" level="INFO">Clicking element 'id=bt_start_showcase'.</msg>
+<msg timestamp="20230711 15:37:45.506" level="INFO">criteria is bt_start_showcase</msg>
+<status status="PASS" starttime="20230711 15:37:45.408" endtime="20230711 15:37:45.506"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230711 14:34:16.225" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230711 14:34:14.225" endtime="20230711 14:34:16.226"/>
+<msg timestamp="20230711 15:37:47.509" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230711 15:37:45.508" endtime="20230711 15:37:47.509"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${fragement}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230711 14:34:16.359" level="INFO">criteria is indicator_showcase</msg>
-<status status="PASS" starttime="20230711 14:34:16.226" endtime="20230711 14:34:16.359"/>
+<msg timestamp="20230711 15:37:47.556" level="INFO">criteria is indicator_showcase</msg>
+<status status="PASS" starttime="20230711 15:37:47.514" endtime="20230711 15:37:47.556"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${buttons}</var>
@@ -85,12 +111,12 @@ criteria is bt_start_showcase</msg>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <arg>${StopShowcase}</arg>
 <doc>Verifies that current page not contains `locator` element.</doc>
-<msg timestamp="20230711 14:34:16.442" level="INFO">Current page not contains element 'id=bt_stop_showcase'.</msg>
-<msg timestamp="20230711 14:34:16.442" level="INFO">criteria is bt_stop_showcase</msg>
-<status status="PASS" starttime="20230711 14:34:16.360" endtime="20230711 14:34:16.442"/>
+<msg timestamp="20230711 15:37:47.577" level="INFO">Current page not contains element 'id=bt_stop_showcase'.</msg>
+<msg timestamp="20230711 15:37:47.578" level="INFO">criteria is bt_stop_showcase</msg>
+<status status="PASS" starttime="20230711 15:37:47.558" endtime="20230711 15:37:47.578"/>
 </kw>
-<msg timestamp="20230711 14:34:16.443" level="INFO">${buttons} = True</msg>
-<status status="PASS" starttime="20230711 14:34:16.360" endtime="20230711 14:34:16.443"/>
+<msg timestamp="20230711 15:37:47.579" level="INFO">${buttons} = True</msg>
+<status status="PASS" starttime="20230711 15:37:47.558" endtime="20230711 15:37:47.580"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${index}</var>
@@ -116,11 +142,11 @@ criteria is bt_start_showcase</msg>
 <arg>200</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230711 14:34:16.444" endtime="20230711 14:34:17.132"/>
+<status status="PASS" starttime="20230711 15:37:47.582" endtime="20230711 15:37:48.124"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:16.443" endtime="20230711 14:34:17.132"/>
+<status status="PASS" starttime="20230711 15:37:47.581" endtime="20230711 15:37:48.124"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:16.443" endtime="20230711 14:34:17.132"/>
+<status status="PASS" starttime="20230711 15:37:47.581" endtime="20230711 15:37:48.124"/>
 </iter>
 <iter>
 <var name="${index}">1</var>
@@ -143,11 +169,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>200</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230711 14:34:17.133" endtime="20230711 14:34:17.868"/>
+<status status="PASS" starttime="20230711 15:37:48.125" endtime="20230711 15:37:48.779"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:17.132" endtime="20230711 14:34:17.868"/>
+<status status="PASS" starttime="20230711 15:37:48.125" endtime="20230711 15:37:48.780"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:17.132" endtime="20230711 14:34:17.868"/>
+<status status="PASS" starttime="20230711 15:37:48.124" endtime="20230711 15:37:48.780"/>
 </iter>
 <iter>
 <var name="${index}">2</var>
@@ -170,11 +196,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>200</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230711 14:34:17.870" endtime="20230711 14:34:18.642"/>
+<status status="PASS" starttime="20230711 15:37:48.782" endtime="20230711 15:37:49.372"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:17.869" endtime="20230711 14:34:18.642"/>
+<status status="PASS" starttime="20230711 15:37:48.781" endtime="20230711 15:37:49.372"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:17.869" endtime="20230711 14:34:18.642"/>
+<status status="PASS" starttime="20230711 15:37:48.780" endtime="20230711 15:37:49.372"/>
 </iter>
 <iter>
 <var name="${index}">3</var>
@@ -197,82 +223,82 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>200</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20230711 14:34:18.643" endtime="20230711 14:34:19.387"/>
+<status status="PASS" starttime="20230711 15:37:49.373" endtime="20230711 15:37:49.957"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:18.642" endtime="20230711 14:34:19.387"/>
+<status status="PASS" starttime="20230711 15:37:49.373" endtime="20230711 15:37:49.958"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:18.642" endtime="20230711 14:34:19.387"/>
+<status status="PASS" starttime="20230711 15:37:49.373" endtime="20230711 15:37:49.958"/>
 </iter>
-<status status="PASS" starttime="20230711 14:34:16.443" endtime="20230711 14:34:19.387"/>
+<status status="PASS" starttime="20230711 15:37:47.581" endtime="20230711 15:37:49.958"/>
 </for>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${glissaire}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230711 14:34:19.392" level="INFO">Clicking element 'id=v_seekbar_overlay'.</msg>
-<msg timestamp="20230711 14:34:20.587" level="INFO">criteria is v_seekbar_overlay</msg>
-<status status="PASS" starttime="20230711 14:34:19.387" endtime="20230711 14:34:20.587"/>
+<msg timestamp="20230711 15:37:49.961" level="INFO">Clicking element 'id=v_seekbar_overlay'.</msg>
+<msg timestamp="20230711 15:37:51.228" level="INFO">criteria is v_seekbar_overlay</msg>
+<status status="PASS" starttime="20230711 15:37:49.959" endtime="20230711 15:37:51.228"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${StopShowcase}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230711 14:34:20.594" level="INFO">Clicking element 'id=bt_stop_showcase'.</msg>
-<msg timestamp="20230711 14:34:21.448" level="INFO">criteria is bt_stop_showcase</msg>
-<status status="PASS" starttime="20230711 14:34:20.587" endtime="20230711 14:34:21.448"/>
+<msg timestamp="20230711 15:37:51.232" level="INFO">Clicking element 'id=bt_stop_showcase'.</msg>
+<msg timestamp="20230711 15:37:52.138" level="INFO">criteria is bt_stop_showcase</msg>
+<status status="PASS" starttime="20230711 15:37:51.230" endtime="20230711 15:37:52.139"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${permission}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230711 14:34:23.369" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button
+<msg timestamp="20230711 15:37:54.004" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button
 criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
-<status status="PASS" starttime="20230711 14:34:21.449" endtime="20230711 14:34:23.369"/>
+<status status="PASS" starttime="20230711 15:37:52.140" endtime="20230711 15:37:54.004"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${permission}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230711 14:34:23.374" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_button'.</msg>
-<msg timestamp="20230711 14:34:23.460" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
-<status status="PASS" starttime="20230711 14:34:23.371" endtime="20230711 14:34:23.461"/>
+<msg timestamp="20230711 15:37:54.007" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<msg timestamp="20230711 15:37:54.058" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
+<status status="PASS" starttime="20230711 15:37:54.006" endtime="20230711 15:37:54.058"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=tv_why_user_title</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230711 14:34:25.457" level="INFO">criteria is tv_why_user_title
+<msg timestamp="20230711 15:37:55.626" level="INFO">criteria is tv_why_user_title
 criteria is tv_why_user_title</msg>
-<status status="PASS" starttime="20230711 14:34:23.461" endtime="20230711 14:34:25.457"/>
+<status status="PASS" starttime="20230711 15:37:54.060" endtime="20230711 15:37:55.626"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=v_click_why_buy</arg>
 <arg>5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230711 14:34:25.742" level="INFO">criteria is v_click_why_buy</msg>
-<status status="PASS" starttime="20230711 14:34:25.458" endtime="20230711 14:34:25.742"/>
+<msg timestamp="20230711 15:37:55.810" level="INFO">criteria is v_click_why_buy</msg>
+<status status="PASS" starttime="20230711 15:37:55.628" endtime="20230711 15:37:55.810"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>id=v_click_why_buy</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230711 14:34:25.745" level="INFO">Clicking element 'id=v_click_why_buy'.</msg>
-<msg timestamp="20230711 14:34:26.033" level="INFO">criteria is v_click_why_buy</msg>
-<status status="PASS" starttime="20230711 14:34:25.742" endtime="20230711 14:34:26.033"/>
+<msg timestamp="20230711 15:37:55.816" level="INFO">Clicking element 'id=v_click_why_buy'.</msg>
+<msg timestamp="20230711 15:37:56.022" level="INFO">criteria is v_click_why_buy</msg>
+<status status="PASS" starttime="20230711 15:37:55.813" endtime="20230711 15:37:56.023"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230711 14:34:31.035" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230711 14:34:26.033" endtime="20230711 14:34:31.035"/>
+<msg timestamp="20230711 15:38:01.025" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230711 15:37:56.024" endtime="20230711 15:38:01.025"/>
 </kw>
-<status status="PASS" starttime="20230711 14:34:09.784" endtime="20230711 14:34:31.035"/>
+<status status="PASS" starttime="20230711 15:37:36.035" endtime="20230711 15:38:01.026"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230711 14:34:31.035" endtime="20230711 14:34:31.507"/>
+<status status="PASS" starttime="20230711 15:38:01.027" endtime="20230711 15:38:01.632"/>
 </kw>
-<status status="PASS" starttime="20230711 14:33:55.600" endtime="20230711 14:34:31.507"/>
+<status status="PASS" starttime="20230711 15:37:26.301" endtime="20230711 15:38:01.632"/>
 </test>
-<status status="PASS" starttime="20230711 14:33:55.586" endtime="20230711 14:34:31.509"/>
+<status status="PASS" starttime="20230711 15:37:26.292" endtime="20230711 15:38:01.640"/>
 </suite>
 <doc>this test suite groups all test cases related to homepage feature</doc>
-<status status="PASS" starttime="20230711 14:33:55.266" endtime="20230711 14:34:31.513"/>
+<status status="PASS" starttime="20230711 15:37:26.069" endtime="20230711 15:38:01.645"/>
 </suite>
 <statistics>
 <total>
