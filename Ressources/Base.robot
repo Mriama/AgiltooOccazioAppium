@@ -6,8 +6,8 @@ Library         Process
 
 
 *** Keywords ***
-Start Appiums
-    start process    C:/Users/monsh/AppData/Roaming/npm/appium.cmd    -p ${PORT}
+Start Appium
+    Run And Return Rc    C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p ${PORT}
     log to console       appium -p ${PORT}
 
 Stop Appium

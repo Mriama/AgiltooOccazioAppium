@@ -7,4 +7,3 @@ Library    AppiumLibrary
 *** Test Cases ***
 Lancer le slide
     Home.Derouler le slide
-
