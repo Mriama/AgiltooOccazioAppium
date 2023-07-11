@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230711 13:03:21.910" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\monsh\PycharmProjects\Occazio\Tests">
+<suite id="s1-s1" name="HomeTest" source="C:\Users\monsh\PycharmProjects\Occazio\Tests\HomeTest.robot">
+<test id="s1-s1-t1" name="Lancer le slide" line="8">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Start Appiums</arg>
+<arg>AND</arg>
+<arg>Occazio</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Start Appiums" library="Base">
+<kw name="Run And Return Rc" library="OperatingSystem">
+<arg>appium -p ${PORT}</arg>
+<doc>Runs the given command in the system and returns the return code.</doc>
+<msg timestamp="20230711 13:03:22.502" level="INFO">Running command 'appium -p 4723 2&gt;&amp;1'.</msg>
+<status status="FAIL" starttime="20230711 13:03:22.495" endtime="20230711 13:03:57.536"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>appium -p ${PORT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230711 13:03:57.536" endtime="20230711 13:03:57.536"/>
+</kw>
+<status status="FAIL" starttime="20230711 13:03:22.494" endtime="20230711 13:03:57.536"/>
+</kw>
+<status status="FAIL" starttime="20230711 13:03:22.494" endtime="20230711 13:03:57.536"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230711 13:03:57.537" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230711 13:03:57.537" endtime="20230711 13:03:57.563"/>
+</kw>
+<msg timestamp="20230711 13:03:57.566" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230711 13:03:57.568" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230711 13:03:57.537" endtime="20230711 13:03:57.569">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20230711 13:03:22.493" endtime="20230711 13:03:57.569">Setup failed:
+Execution terminated by signal
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" starttime="20230711 13:03:22.473" endtime="20230711 13:03:57.573"/>
+</suite>
+<doc>this test suite groups all test cases related to homepage feature</doc>
+<status status="FAIL" starttime="20230711 13:03:21.916" endtime="20230711 13:03:57.576"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="HomeTest">Tests.HomeTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230711 13:03:57.566" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

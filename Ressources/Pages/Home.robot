@@ -9,14 +9,20 @@ Derouler le slide
     sleep    2s
 
     wait until element is Visible     ${fragement}
-    ${element_size}=    Get Element Size    ${fragement}
-    ${element_location}=    Get Element Location    ${fragement}
-   FOR    ${element_size}    IN RANGE    5
-    ${start_x}=         Evaluate      ${element_location['x']} + (${element_size} * 50)
-    ${start_y}=         Evaluate      ${element_location['y']} + (${element_size} * 50)
-    ${end_x}=           Evaluate      ${element_location['x']} + (${element_size} * 50)
-    ${end_y}=           Evaluate      ${element_location['y']} + (${element_size} * 50)
-    AppiumLibrary.Swipe               ${start_x}    ${start_y}  ${end_x}  ${end_y}  1000
-   END
+    ${buttons}=    Run Keyword And Return Status    Page Should Not Contain Element    ${StopShowcase}
+    FOR    ${index}  IN RANGE    4
+           Run Keyword If    ${buttons}    Swipe By Percent    90    50    10    50    200
+           ...               ELSE             Exit For Loop
+    END
 
-    Sleep  5s
+    Click Element    ${glissaire}
+    Click Element    ${StopShowcase}
+    Wait Until Element Is Visible    ${permission}
+    Click Element    ${permission}
+    Wait Until Element Is Visible    id=tv_why_user_title   10
+    Wait Until Element Is Visible    id=v_click_why_buy   5
+    Click Element    id=v_click_why_buy
+    sleep    5s
+
+
+
