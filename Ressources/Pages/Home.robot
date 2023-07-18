@@ -17,8 +17,8 @@ Derouler le slide
 
     Click Element    ${glissaire}
     Click Element    ${StopShowcase}
-    Wait Until Element Is Visible    ${permission}
-    Click Element    ${permission}
+    #Wait Until Element Is Visible    ${permission}
+    #Click Element    ${permission}
     Wait Until Element Is Visible    id=tv_why_user_title   10
     Wait Until Element Is Visible    id=v_click_why_buy   5
     Click Element    id=v_click_why_buy
