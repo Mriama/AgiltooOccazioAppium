@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../Data/Data.robot
-Resource    ../Env/device1.txt
 Library    AppiumLibrary
 Library         OperatingSystem
 Library         Process
