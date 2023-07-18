@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230711 14:31:20.622" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\monsh\PycharmProjects\Occazio\Tests">
+<suite id="s1-s1" name="HomeTest" source="C:\Users\monsh\PycharmProjects\Occazio\Tests\HomeTest.robot">
+<test id="s1-s1-t1" name="Lancer le slide" line="8">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>base.Start Appium</arg>
+<arg>AND</arg>
+<arg>base.Occazio</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Start Appium" library="Base">
+<kw name="Run And Return Rc" library="OperatingSystem">
+<arg>C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p ${PORT}</arg>
+<doc>Runs the given command in the system and returns the return code.</doc>
+<msg timestamp="20230711 14:31:20.986" level="INFO">Running command 'C:/Users/monsh/AppData/Roaming/npm/appium.cmd -p 4723 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20230711 14:31:20.978" endtime="20230714 11:12:16.000"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>appium -p ${PORT}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20230714 11:12:16.032" level="FAIL">OSError: [Errno 22] Invalid argument</msg>
+<status status="FAIL" starttime="20230714 11:12:16.024" endtime="20230714 11:12:16.036"/>
+</kw>
+<status status="FAIL" starttime="20230711 14:31:20.977" endtime="20230714 11:12:16.037"/>
+</kw>
+<status status="FAIL" starttime="20230711 14:31:20.976" endtime="20230714 11:12:16.037"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230714 11:12:16.045" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230714 11:12:16.044" endtime="20230714 11:12:16.066"/>
+</kw>
+<msg timestamp="20230714 11:12:16.069" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230714 11:12:16.070" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230714 11:12:16.041" endtime="20230714 11:12:16.072">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20230711 14:31:20.975" endtime="20230714 11:12:16.072">Setup failed:
+OSError: [Errno 22] Invalid argument
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" starttime="20230711 14:31:20.942" endtime="20230714 11:12:16.073"/>
+</suite>
+<doc>this test suite groups all test cases related to homepage feature</doc>
+<status status="FAIL" starttime="20230711 14:31:20.625" endtime="20230714 11:12:16.073"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="HomeTest">Tests.HomeTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230714 11:12:16.069" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

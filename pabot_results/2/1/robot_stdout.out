@@ -1,0 +1,15 @@
+==============================================================================
+Tests :: this test suite groups all test cases related to homepage feature    
+==============================================================================
+Tests.HomeTest                                                                
+==============================================================================
+Lancer le slide                                                       | FAIL |
+Element locator 'id=com.android.permissioncontroller:id/permission_allow_button' did not match any elements after 5 seconds
+------------------------------------------------------------------------------
+Tests.HomeTest                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests :: this test suite groups all test cases related to homepage... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\monsh\PycharmProjects\Occazio\pabot_results\2\1\output.xml

@@ -1,0 +1,2 @@
+--variable device:Samsung Galaxy A51
+--variable device:Google Pixel 3
